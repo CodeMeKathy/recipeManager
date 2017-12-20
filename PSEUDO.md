@@ -1,4 +1,4 @@
-
+# Recipe Manager Scaffolding 
 
 1. Setup Environment
 
@@ -11,25 +11,9 @@
     - instructions
     - ingredients
 
+### PM Plan:
 
-## Recipe #1: "Thumb Print Cookies"
-
-### Ingredients: 
-- "1/2 cup butter, softened",
-- "1/4 cup packed brown sugar",
-- "1 egg",
-- "1/2 teaspoon vanilla extract"
-- "1 cup all-purpose flour"
-- "2/3 cup any flavor fruit jam"
-- "1/4 teaspoon salt"
-
-### Directions: "Preheat oven to 300 degrees F. Grease cookie sheets."
-- "Separate egg, - reserving egg white. - Cream butter or - margarine, sugar, and - egg yolk."
-- "Add vanilla, flour and - salt, mixing well."
-- "Shape dough into - balls. Roll in egg - white. Place on cookie - sheets about 2 inches apart. Bake for 5 - minutes."
-- "Remove cookies from oven. With thumb, dent each cookie. Put jelly or preserves in each thumbprint. Bake for another 8 minutes."
-
-## Established MVP
+### Established MVP
 
 - Recipes needed: #2
 - 
@@ -49,4 +33,29 @@
 
 
 
+
+## Recipe #1: "Thumb Print Cookies"
+
+### Ingredients: 
+- "1/2 cup butter, softened",
+- "1/4 cup packed brown sugar",
+- "1 egg",
+- "1/2 teaspoon vanilla extract"
+- "1 cup all-purpose flour"
+- "2/3 cup any flavor fruit jam"
+- "1/4 teaspoon salt"
+
+### Directions: 
+- "Preheat oven to 300 degrees F. Grease cookie sheets."
+- "Separate egg, - reserving egg white. - Cream butter or - margarine, sugar, and - egg yolk."
+- "Add vanilla, flour and - salt, mixing well."
+- "Shape dough into - balls. Roll in egg - white. Place on cookie - sheets about 2 inches apart. Bake for 5 - minutes."
+- "Remove cookies from oven. With thumb, dent each cookie. Put jelly or preserves in each thumbprint. Bake for another 8 minutes."
+
+## Recipe #2: "Authentic Louisiana Red Beans and Rice"
+
+### Ingredients: 
+
+
+### Directions: 
 
