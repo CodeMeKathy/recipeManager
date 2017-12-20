@@ -18,12 +18,6 @@ app.engine('.hbs', hbs({
 
 
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World')
-// })
-
-
-
 app.get('/', (req, res) => {
   res.render('app-welcome')
 })
