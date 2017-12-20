@@ -3,6 +3,9 @@
 1. Setup Environment
 
 2. Create ERD
+- start with one recipe and the ingredets as properties
+
+
 
 Recipe: "Thumb Print Cookies"
 
