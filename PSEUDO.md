@@ -23,7 +23,8 @@
 - "2/3 cup any flavor fruit jam"
 - "1/4 teaspoon salt"
 
-### Directions: "Preheat oven to 300 degrees F. Grease cookie sheets."
+### Directions: 
+- "Preheat oven to 300 degrees F. Grease cookie sheets."
 - "Separate egg, - reserving egg white. - Cream butter or - margarine, sugar, and - egg yolk."
 - "Add vanilla, flour and - salt, mixing well."
 - "Shape dough into - balls. Roll in egg - white. Place on cookie - sheets about 2 inches apart. Bake for 5 - minutes."
