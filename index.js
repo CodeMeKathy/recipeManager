@@ -8,7 +8,7 @@ app.set('view engine', 'hbs')
 app.use(parser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.render('app-welcome')
 })
 
 app.listen(app.get('port'), () => {
