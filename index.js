@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
+app.get('/', (req, res) => {
+    res.render('app-welcome')
+})
+
 app.listen(app.get('port'), () => {
   console.log('Aww..yeah!')
 })
