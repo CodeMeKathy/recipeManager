@@ -7,6 +7,7 @@ app.set('port', process.env.PORT || 5001)
 app.set('view engine', 'hbs')
 app.use(parser.urlencoded({ extended: true }))
 
+app.use('/assets', express.static('public'))
 
 app.engine('.hbs', hbs({
     extname: '.hbs',
