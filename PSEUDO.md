@@ -12,7 +12,7 @@
     - ingredients
 
 
-## Recipe: "Thumb Print Cookies"
+## Recipe #1: "Thumb Print Cookies"
 
 ### Ingredients: 
 - "1/2 cup butter, softened",
@@ -31,9 +31,11 @@
 
 ## Established MVP
 
+- Recipes needed: #2
+
 * Semantic HTML and CSS that passes validation. X
 * A `package.json` file listing all the packages you used. X
-* An `index.js` or `server.js` file for starting up your server
+* An `index.js` or `server.js` file for starting up your server. X
 * A `views/` directory for your handlebars views and a `layout.hbs`
 * A `controllers/` directory for each controller in your application
 * A connection to MongoDB through Mongoose
