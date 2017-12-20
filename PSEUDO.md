@@ -12,6 +12,13 @@
     - ingredients
 
 ### PM Plan:
+Kathy:
+- recipe 2 + 3 
+- Add the recipe input field - create (c)
+
+Alonzo:
+- recipe of the day section with randomizer
+- Add seed data for recipes 2-3 
 
 ### Established MVP
 
@@ -27,7 +34,7 @@
 * A `controllers/` directory for each controller in your application
 * A connection to MongoDB through Mongoose
 * At least one Mongoose model
-* The ability to create (C) a record of your model
+* The ability to create (input) (C) a record of your model
 * The ability to read (R) a single record of your model (a show view)
 * The ability to read (R) multiple records of your model (a list view)
 
