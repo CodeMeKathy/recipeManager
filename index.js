@@ -7,9 +7,21 @@ app.set('port', process.env.PORT || 5001)
 app.set('view engine', 'hbs')
 app.use(parser.urlencoded({ extended: true }))
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
+
+app.engine('.hbs', hbs({
+    extname: '.hbs',
+    partialsDir: 'views/',
+    layoutsDir: 'views/',
+    defaultLayout: 'layout'
+}))
+
+
+
+// app.get('/', (req, res) => {
+//   res.send('Hello World')
+// })
+
+
 
 app.get('/', (req, res) => {
     res.render('app-welcome')
