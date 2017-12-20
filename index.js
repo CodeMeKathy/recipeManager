@@ -1,7 +1,7 @@
-const express       = require('express')
-const hbs           = require('express-handlebars')
-const parser        = require('body-parser')
-const app           = express()
+const express = require('express')
+const hbs = require('express-handlebars')
+const parser = require('body-parser')
+const app = express()
 
 app.set('port', process.env.PORT || 5001)
 app.set('view engine', 'hbs')
