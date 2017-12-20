@@ -32,6 +32,9 @@
 ## Established MVP
 
 - Recipes needed: #2
+- 
+
+
 
 * Semantic HTML and CSS that passes validation. X
 * A `package.json` file listing all the packages you used. X
@@ -43,5 +46,7 @@
 * The ability to create (C) a record of your model
 * The ability to read (R) a single record of your model (a show view)
 * The ability to read (R) multiple records of your model (a list view)
+
+
 
 
