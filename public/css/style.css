@@ -2,8 +2,8 @@ h1 a {
     text-decoration: none;
 }
 
-input {
+.inputField {
 
-    width: 50px;
+    width: 300px;
     border: 3 solid #000000;
 }
