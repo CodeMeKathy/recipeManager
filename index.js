@@ -8,7 +8,8 @@ app.set('port', process.env.PORT || 5001)
 app.set('view engine', 'hbs')
 app.use('/assets', express.static('public'))
 
-app.use(parser.urlencoded({ extended: true }))
+app.use(parser.json()) //handles json post requests
+app.use(parser.urlencoded({ extended: true })) // handles form submissions
 app.use('/recipes', recipes)
 
 app.engine('.hbs', hbs({
@@ -26,4 +27,13 @@ app.get('/', (req, res) => {
 
 app.listen(app.get('port'), () => {
   console.log('Aww..yeah!')
+})
+
+app.post("/", (req, res) => {
+  res.render("app-welcome", {
+    // title: req.body.title,
+    // description: req.body.description,
+    instructions: req.body.instructions,
+    ingredients: req.body.ingredients
+  })
 })
