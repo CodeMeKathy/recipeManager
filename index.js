@@ -1,6 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const parser = require('body-parser')
+const methodOver = require('method-override')
 const shuffle = require('shuffle-array')
 const recipes = require('./controller/recipes')
 const app = express()
@@ -18,6 +19,7 @@ app.use('/assets', express.static('public'))
 app.use(parser.json()) //handles json post requests
 app.use(parser.urlencoded({ extended: true })) // handles form submissions
 app.use('/recipes', recipes)
+app.use(methodOver('_method'))
 
 app.engine('.hbs', hbs({
     extname: '.hbs',
