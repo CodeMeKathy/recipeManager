@@ -11,7 +11,8 @@ const router = express.Router()
 router.get('/', (req, res) => {
   Recipe.find({})
     .then((recipes) => {
-      res.render('recipes')
+      res.render('recipes', {
+        recipes: recipes})
     .catch((err) => {
       console.log(err)
     })

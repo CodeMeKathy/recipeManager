@@ -1,2 +1,7 @@
-{{recipes.title}}
-
+{{#each recipes as |recipe index|}}
+<h3>{{recipe.title}}</h3>
+<h4>{{recipe.description}}</h4>
+<p>{{recipe.ingredients}}</p>
+<p>{{recipe.description}}</p>
+<br>
+{{/each}}

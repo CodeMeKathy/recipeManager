@@ -30,9 +30,9 @@ Alonzo:
 * Semantic HTML and CSS that passes validation. X
 * A `package.json` file listing all the packages you used. X
 * An `index.js` or `server.js` file for starting up your server. X
-* A `views/` directory for your handlebars views and a `layout.hbs`
-* A `controllers/` directory for each controller in your application
-* A connection to MongoDB through Mongoose
+* A `views/` directory for your handlebars views and a `layout.hbs` X
+* A `controllers/` directory for each controller in your application X
+* A connection to MongoDB through Mongoose 
 * At least one Mongoose model
 * The ability to create (input) (C) a record of your model (Kat)
 * The ability to read (R) a single record of your model (a show view) (Alz)
