@@ -4,10 +4,19 @@
 </h2>
 <h3 style="text-align:center">Recipe of the Day</h3>
 <h1 style="text-align:center">{{fullRecipes}}</h1>
+<div id='flexContainer'>  
+    
+
 
 <h3>Share your recipes with us!</h3>
 <form action="/newRecipe" method="post">
-    <input class='inputField' type="text" name='newRecipe' placeholder="Share your recipes with us.">
+    <input class='inputTitle' type="text" name='newRecipeTitle' placeholder="New Recipe Title">
+    <input class='inputField' type="text" name='newRecipeDescription' placeholder="Recipe Description">
+    <input class='inputField' type="text" name='newRecipeInstructions' placeholder="Recipe Instructions">
     <input type="submit" value='Post'>
 </form>
 
+<h2><a href="/recipes">See the latest Recipes</a>
+</h2>
+
+ </div> 
