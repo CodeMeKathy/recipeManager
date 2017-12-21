@@ -1,13 +1,15 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const parser = require('body-parser')
+const recipes = require('./controller/recipes')
 const app = express()
 
 app.set('port', process.env.PORT || 5001)
 app.set('view engine', 'hbs')
-app.use(parser.urlencoded({ extended: true }))
-
 app.use('/assets', express.static('public'))
+
+app.use(parser.urlencoded({ extended: true }))
+app.use('/recipes', recipes)
 
 app.engine('.hbs', hbs({
     extname: '.hbs',
