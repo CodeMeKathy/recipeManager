@@ -5,7 +5,12 @@
     align-items: center;
 }
 
+.recipeDay {
 
+    width: 500px;
+    height: 150px;
+    /* background-image:  */
+}
 
 h1 a {
     display: flex;
