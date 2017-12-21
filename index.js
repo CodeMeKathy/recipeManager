@@ -10,7 +10,7 @@ app.use('/assets', express.static('public'))
 
 app.use(parser.json()) //handles json post requests
 app.use(parser.urlencoded({ extended: true })) // handles form submissions
-app.use('/recipes', recipes)
+// app.use('/recipes', recipes)
 
 app.engine('.hbs', hbs({
     extname: '.hbs',
@@ -19,14 +19,12 @@ app.engine('.hbs', hbs({
     defaultLayout: 'layout'
 }))
 
-
+app.listen(app.get('port'), () => {
+  console.log('Aww..yeah!')
+})
 
 app.get('/', (req, res) => {
   res.render('app-welcome')
-})
-
-app.listen(app.get('port'), () => {
-  console.log('Aww..yeah!')
 })
 
 app.post("/", (req, res) => {
