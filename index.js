@@ -17,7 +17,7 @@ app.use('/assets', express.static('public'))
 
 app.use(parser.json()) //handles json post requests
 app.use(parser.urlencoded({ extended: true })) // handles form submissions
-// app.use('/recipes', recipes)
+app.use('/recipes', recipes)
 
 app.engine('.hbs', hbs({
     extname: '.hbs',
