@@ -1,5 +1,27 @@
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 h1 a {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    font-style: italic;
+    color: #1df3f3;
+}
+
+.inputTitle {
+
+    width: 100px;
+    border: 3 solid #000000;
 }
 
 .inputField {
@@ -7,3 +29,4 @@ h1 a {
     width: 300px;
     border: 3 solid #000000;
 }
+
