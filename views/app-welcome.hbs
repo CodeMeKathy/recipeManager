@@ -6,10 +6,11 @@
 
 
 <h3>Share your recipes with us!</h3>
-<form action="/newRecipe" method="post">
-    <input class='inputTitle' type="text" name='newRecipeTitle' placeholder="New Recipe Title">
-    <input class='inputField' type="text" name='newRecipeDescription' placeholder="Recipe Description">
-    <input class='inputField' type="text" name='newRecipeInstructions' placeholder="Recipe Instructions">
+<form action="/recipes/{{recipe.title}}?_method=put" method="post">
+    <input class='inputTitle' type="text" name='Recipe[title]' placeholder="New Recipe Title" value="{{recipe.title}}">
+    <input class='inputField' type="text" name='Recipe[description]' placeholder="Recipe Description" value="{{recipe.description}}">
+    <input class='inputField' type="text" name='Recipe[ingredients]' placeholder="Recipe Ingredients" value="{{recipe.ingredients}}">
+    <input class='inputField' type="text" name='Recipe[instructions]' placeholder="Recipe Instructions" value="{{recipe.instructions}}">
     <input class='submit' type="submit" value='Post'>
 </form>
 
@@ -17,3 +18,5 @@
 </h2>
 
  </div> 
+
+ {{!-- name='candidate[name]' --}}

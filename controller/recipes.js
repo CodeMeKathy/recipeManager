@@ -18,4 +18,12 @@ router.get('/', (req, res) => {
     })
     })
 })
+
+router.post('/', (req, res) => {
+  Recipe.create(req.body.Recipe)
+    .then(Recipe => {
+      res.redirect(`/Recipe/${Recipe.title}`)
+    })
+})
+
 module.exports = router
