@@ -17,7 +17,9 @@ h1 a {
     font-style: italic;
     color: #1df3f3;
 }
-
+div .recipeDay {
+    font-size: 10px;
+}
 .inputTitle {
 
     width: 100px;
