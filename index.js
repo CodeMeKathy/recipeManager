@@ -36,11 +36,11 @@ app.get('/', (req, res) => {
   res.render('app-welcome', {fullRecipes: shuffle.pick(fullRecipe)})
 })
 
-app.post("/", (req, res) => {
-  res.render("app-welcome", {
-    // title: req.body.title,
-    // description: req.body.description,
-    instructions: req.body.instructions,
-    ingredients: req.body.ingredients
-  })
-})
+// app.post("/", (req, res) => {
+//   res.render("app-welcome", {
+//     // title: req.body.title,
+//     // description: req.body.description,
+//     instructions: req.body.instructions,
+//     ingredients: req.body.ingredients
+//   })
+// })
