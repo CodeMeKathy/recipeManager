@@ -23,7 +23,6 @@ app.set('view engine', 'hbs')
 app.use('/assets', express.static('public'))
 app.use(morgan('dev'))
 app.use(cookieParser())
-a
 app.use(bodyParser.json()) //handles json post requests
 app.use(bodyParser.urlencoded({ extended: true })) // handles form submissions
 app.use('/recipes', recipes)
