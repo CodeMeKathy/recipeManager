@@ -28,6 +28,22 @@ app.use(bodyParser.urlencoded({ extended: true })) // handles form submissions
 app.use('/recipes', recipes)
 app.use(methodOver('_method'))
 
+app.use(session({secret: 'RECIPE-MANAGER'}))
+app.use(passport.initialize())
+app.use(passport.session())
+app.use(flash())
+
+// require('./config/passport')(passport)
+
+app.use(function (req, res, next) {
+  global.currentUser = req.user
+  res.locals.currentUser = req.user
+  next()
+})
+
+const routes = require('./config/routes')
+app.use(routes)
+
 app.engine('.hbs', hbs({
     extname: '.hbs',
     partialsDir: 'views/',
