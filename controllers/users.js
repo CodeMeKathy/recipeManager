@@ -36,10 +36,16 @@ function getLogout(request, response) {
     response.redirect('/');
 }
 
+// Restricted page
+function secret(request, response) {
+    response.render("recipes.hbs");
+}
+
 module.exports = {
     getLogin: getLogin,
     postLogin: postLogin,
     getSignup: getSignup,
     postSignup: postSignup,
     getLogout: getLogout,
+    secret: secret
 };
