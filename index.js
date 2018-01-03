@@ -10,7 +10,6 @@ const flash = require('connect-flash')
 const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
-const hbs = require('hbs')
 const app = express()
 
 const fullRecipe = [
