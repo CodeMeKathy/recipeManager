@@ -10,7 +10,6 @@ const flash = require('connect-flash')
 const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
-const hbs = require('hbs')
 const app = express()
 
 const fullRecipe = [
@@ -22,7 +21,9 @@ const fullRecipe = [
 app.set('port', process.env.PORT || 5001)
 app.set('view engine', 'hbs')
 app.use('/assets', express.static('public'))
-
+app.use(morgan('dev'))
+app.use(cookieParser())
+a
 app.use(bodyParser.json()) //handles json post requests
 app.use(bodyParser.urlencoded({ extended: true })) // handles form submissions
 app.use('/recipes', recipes)
