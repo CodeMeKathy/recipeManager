@@ -28,12 +28,12 @@ app.use(bodyParser.urlencoded({ extended: true })) // handles form submissions
 app.use('/recipes', recipes)
 app.use(methodOver('_method'))
 
-app.use(session({secret: 'RECIPE-MANAGER'}))
+app.use(session({secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS'}))
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(flash())
 
-// require('./config/passport')(passport)
+require('./config/passport')(passport)
 
 app.use(function (req, res, next) {
   global.currentUser = req.user
